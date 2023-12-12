@@ -19,7 +19,7 @@ class Image(models.Model):
                                     verbose_name='Место с картинки',
                                     )
     image_id = models.PositiveIntegerField(default=1)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='media/')
 
     def __str__(self):
         return f"{self.image_id} {str(self.image_place)}"
